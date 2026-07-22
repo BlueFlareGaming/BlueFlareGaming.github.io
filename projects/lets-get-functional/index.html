@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.5.3/mocha.min.css">
 		<style>
 			html, body{
 				width:100vw;
@@ -14,25 +13,65 @@
 		</style>
 	</head>
 	<body>
-		<div id="mocha"></div>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.5.3/mocha.min.js"></script>
-		<script>mocha.setup('')</script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.1.2/chai.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.4.0/lodash.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/sinon.js/4.0.0/sinon.min.js"></script>
-		<script src='data/data.js'></script>
-		<script src='../underpants/underpants.js'></script>
-		<script>
-			var assert = chai.assert;
-			var expect = chai.expect;
-			var should = chai.should();
-			var customers = data;
-			var _ = _;
-		</script>
-		<!-- include source files here... -->
-		<script src="index.js"></script>
-		<!-- include spec files here... -->
-		<script src="spec/index.spec.js"></script>
-		<script>mocha.run();</script>
+		<div>
+			maleCount()
+    			is a function
+    			should return a number
+    			should find number of males
+
+			femaleCount()
+    			is a function
+    			should return a number
+    			should find number of females
+
+			oldestCustomer()
+    			is a function
+   				should return a string
+    			should find oldest customer name
+
+			youngestCustomer()
+    			is a function
+    			should return a string
+    			should find youngest customer name
+
+			averageBalance()
+    			is a function
+    			should return a number
+    			should find average balance of customers
+
+			firstLetterCount()
+    			is a function
+    			should return a number
+   				should work if uppercase or lowercase
+    			should find 1 customer with a name starting with B
+    			should find 2 customer with a name starting with D
+    			should find 0 customer with a name starting with F
+
+			friendFirstLetterCount()
+				is a function
+    			should return a number
+    			should work if uppercase or lowercase
+    			should find Doris Smith has 1 friend with an B name
+    			should find Adele Mullen has 2 friend with an J name
+    			should find Olga Newton has 2 friend with an C name
+
+			friendsCount()
+				is a function
+    			should return an array
+    			should find all customers that are friends with Olga Newton
+    			should find all customers that are friends with Doyle Erickson
+   				should find all customers that are friends with Bucker Kennedy
+    			should find all customers that are friends with Shelly Walton
+
+			topThreeTags()
+    			is a function
+    			should return an array
+    			should find three of the top tags
+
+			genderCount()
+    			is a function
+    			should return an object
+    			should return a summary of customer genders
+		</div>
 	</body>
 </html>
